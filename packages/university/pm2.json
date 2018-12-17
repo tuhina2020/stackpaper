@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "university",
+      "script": "dist/server.js",
+      "exec_mode": "cluster",
+      "instances": 1,
+      "max_memory_restart": "1536M",
+      "node_args": ["--max-old-space-size=2048"],
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": 5050
+      },
+      "env_production": {
+       "NODE_ENV": "production"
+      },
+      "kill_timeout": 5500
+    }
+  ]
+}

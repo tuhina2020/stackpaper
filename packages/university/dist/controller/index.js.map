@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../lib/controller/index.js"],"names":["dummy","request","success","message"],"mappings":";;;;;kBAAe;AACdA,QAAO,eAACC,OAAD;AAAA,SAAc,EAAEC,SAAS,IAAX,EAAiBC,SAAS,WAA1B,EAAd;AAAA;AADO,C","file":"index.js","sourcesContent":["export default {\n\tdummy: (request) => ({ success: true, message: 'DUMMY API' })\n}"]}
