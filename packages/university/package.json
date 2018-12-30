@@ -5,7 +5,7 @@
   "author": "tuhina2020 <tuhinatwyla@gmail.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/university.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -21,13 +21,13 @@
     "local": "ENV=LOCAL nodemon dist/server.js"
   },
   "dependencies": {
-    "utils": "^0.0.1",
     "compression": "^1.7.3",
     "config": "^3.0.0",
     "cors": "^2.8.5",
     "lodash": "^4.17.11",
     "micro-ex-router": "^1.5.4",
-    "source-map-support": "^0.5.9"
+    "source-map-support": "^0.5.9",
+    "utils": "^1.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

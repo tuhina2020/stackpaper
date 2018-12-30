@@ -33,5 +33,22 @@
     "micro-ex-router": "^1.5.4",
     "path": "^0.12.7",
     "source-map-support": "^0.5.9"
-  }
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuhina2020/stackpaper.git"
+  },
+  "keywords": [],
+  "author": "Tuhina Chatterjee <tuhina.chatterjee1492@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuhina2020/stackpaper/issues"
+  },
+  "homepage": "https://github.com/tuhina2020/stackpaper#readme",
+  "description": ""
 }

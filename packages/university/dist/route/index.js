@@ -54,5 +54,7 @@ router.use(function (req, res) {
   return new _promise2.default(function (next) {
     return (0, _compression2.default)()(req, res, next);
   });
-}).get('/' + _package.name + '/dummy', _controller2.default.dummy).options('/' + _package.name + '*', _controller2.default.healthCheck);
+}).get('/' + _package.name + '/dummy', _controller2.default.dummy).options('/' + _package.name + '*', function () {});
+
+module.exports = router;
 //# sourceMappingURL=index.js.map

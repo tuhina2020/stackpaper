@@ -17,17 +17,11 @@ const options = {
 //   handleResponse({})
 // );
 
-const auth = compose(
-  cors({})
-  // handleResponse({}),
-  // authenticate({
-  //   Mongo
-  // })
-);
-
 const router = Router(options);
 router
-	.use((req, res) => new Promise(next => cors()(req, res, next)))
+  .use((req, res) => new Promise(next => cors()(req, res, next)))
 	.use((req, res) => new Promise(next => compression()(req, res, next)))
-    .get(`/${name}/dummy`, Controller.dummy)
-	.options(`/${name}*`, Controller.healthCheck)
+  .get(`/${name}/dummy`, Controller.dummy)
+	.options(`/${name}*`, () => {});
+
+module.exports = router;

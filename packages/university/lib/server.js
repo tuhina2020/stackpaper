@@ -4,7 +4,7 @@ import routes from './route';
 
 import { name } from '../package.json';
 
-const server = micro(routes());
+const server = micro(routes);
 
   const port = process.env.PORT || getPortNumber({ str: name });
   server.listen(port, () => {

@@ -16,7 +16,7 @@ var _package = require('../package.json');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var server = (0, _micro2.default)((0, _route2.default)());
+var server = (0, _micro2.default)(_route2.default);
 
 var port = process.env.PORT || getPortNumber({ str: _package.name });
 server.listen(port, function () {
